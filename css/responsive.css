@@ -1,0 +1,49 @@
+@media only screen and (max-width: 1024px) { .first-block .carousel .title { top: 197px; }
+  .first-block .carousel .title h1 { font-size: 50px; }
+  .first-block .carousel .title p { margin-top: 15px; }
+  .last-block .adress .exampleInput { width: 48%; }
+  .last-block .adress textarea { width: 100%; } }
+@media only screen and (max-width: 800px) { .navbar .navbar-nav li .navbar-form { display: none; }
+  .navbar .navbar-collapse { background: #fff; }
+  .navbar .navbar-collapse ul { float: right; display: block; }
+  .navbar .navbar-collapse ul li a { font-size: 14px; padding: 10px; }
+  .first-block .carousel .title { top: 140px; }
+  .first-block .carousel .title h1 { font-size: 40px; }
+  .first-block .carousel .title p { font-size: 12px; }
+  .second-block .col-md-12 { margin-top: 15px; }
+  .second-block .col-md-12 .stroke { margin-top: 20px; }
+  .third-block .desk { margin-top: 20px; margin-bottom: 25px; }
+  .third-block .pg-bar { height: 50px; }
+  .third-block .pg-bar .pg-container { width: 90%; }
+  .last-block .map .bg-map .col-md-10 .adress .form-inline { margin-left: 30px; } }
+@media only screen and (max-width: 639px) { .main-title { margin-top: 50px; }
+  .main-title h1 { margin-bottom: 20px; }
+  .main-title p { font-size: 12px; }
+  .first-block .carousel .title { top: 130px; }
+  .first-block .carousel .title h1 { font-size: 30px; }
+  .first-block .carousel .title p { font-size: 10px; }
+  .first-block .carousel .carousel-control span { width: 30px; height: 37px; }
+  .last-block .map { margin-top: 50px; }
+  .last-block .map .bg-map .col-md-10 .adress .form-inline { margin-left: 30px; margin-top: 30px; }
+  .last-block .map .bg-map .col-md-10 .adress .form-inline input:nth-child(1) { margin-bottom: 15px; }
+  .last-block .map .bg-map .col-md-10 .adress .form-inline .checkbox { display: inline-block; }
+  .last-block .map .bg-map .col-md-10 .adress .form-inline button { width: 100px; height: 45px; }
+  .last-block .map .bg-map .col-md-10 .adress .col-md-3 p { font-size: 14px; }
+  .last-block .map .bg-map .col-md-10 .adress .col-md-3 p:nth-child(1) { margin-top: 30px; }
+  .last-block .map .bg-map footer .copyright { font-size: 12px; }
+  .last-block .map .bg-map footer .social-icons a { margin: 0px 6px; } }
+@media only screen and (max-width: 430px) { .main-title { margin-top: 30px; }
+  .main-title p { font-size: 10px; }
+  .first-block .carousel .title { top: 50px; }
+  .first-block .carousel .title h1 { font-size: 17px; }
+  .first-block .carousel .title p { font-size: 5px; margin-top: 0; }
+  .first-block .carousel .carousel-control span { width: 30px; height: 37px; }
+  .last-block .map .bg-map .col-md-10 .adress .form-inline { margin-left: 15px; margin-top: 15px; margin-right: 15px; }
+  .last-block .map .bg-map .col-md-10 .adress .form-inline .exampleInput { min-width: 100%; }
+  .last-block .map .bg-map .col-md-10 .adress .form-inline input:nth-child(1) { margin-bottom: 15px; }
+  .last-block .map .bg-map .col-md-10 .adress .form-inline .checkbox { display: inline-block; margin-top: 15px; }
+  .last-block .map .bg-map .col-md-10 .adress .form-inline button { width: 75px; height: 35px; }
+  .last-block .map .bg-map .col-md-10 .adress .col-md-3 p { font-size: 12px; display: inline-block; margin: 5px; }
+  .last-block .map .bg-map .col-md-10 .adress .col-md-3 p:nth-child(1) { margin-top: 3px; }
+  .last-block .map .bg-map footer .copyright { font-size: 10px; }
+  .last-block .map .bg-map footer .social-icons a { margin: 0px 2px; } }

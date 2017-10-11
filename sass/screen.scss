@@ -1,0 +1,556 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "fonts";
+@mixin box-shadow($top, $left, $blur, $color, $inset:"") 
+{
+    -webkit-box-shadow:$top $left $blur $color #{$inset};
+    -moz-box-shadow:$top $left $blur $color #{$inset};
+    box-shadow:$top $left $blur $color #{$inset};
+}
+
+.main-title
+{
+	margin-top: 92px;
+	h1
+	{
+		text-transform: uppercase;
+		font-family: 'latobold';
+		color: #232323;
+		margin-bottom: 33px;
+		span
+		{
+			color: #009dda;
+		}
+	}
+	p
+	{
+		font-family: 'latoregular';
+		color: #999999;
+	}
+}
+.navbar
+{
+	margin-bottom: 0 !important;
+	background: #ffffff;
+	height: 70px;
+	.navbar-header
+	{
+		.navbar-brand
+		{
+			padding: 23px 0;
+		}
+		.navbar-toggle
+		{
+			border: 1px solid #7058a6;
+			margin-top: 18px;
+			.icon-bar
+			{
+				background: #7349a7;
+				width: 27px;
+   				height: 3px;
+			}
+		}
+	}
+	.navbar-nav
+	{
+		padding:0; 
+		list-style-type:none; 
+		white-space:nowrap;
+		.active
+		{
+			font-family: 'latobold';
+		}
+		li
+		{
+			float:left; 
+			position:relative;
+			ul
+			{
+				/*display:none; */
+				opacity: 0;
+				position:absolute; 
+				left:0; 
+				top:100%; 
+			}
+			&:hover > ul
+			{
+				/*display:block;*/
+				opacity: 1;
+				transition: 1s;
+
+			}
+			>a
+			{
+				font-size: 16px;
+				font-family: 'latoregular';
+				color: #232323;
+				padding: 23px;
+				&:focus, &:hover, &:active
+				{
+					background: none;
+					font-family: 'latobold';
+					outline: none;
+				}
+			}
+			.menu
+			{
+				margin-top: 5px;
+				border-top-left-radius: 0;
+				border-top-right-radius: 0;
+				border-radius: 0;
+				border-top: 2px solid #fff200;
+				width: 183px;
+				background: rgba(44, 29, 64, 0.8);
+				padding-top: 20px;
+				li
+				{
+					list-style-image: url(../img/glyphicon-right.png);
+					position:relative;
+					padding: 10px 20px;
+					list-style-position: inside;
+					&:hover > ul
+					{
+						/*display:block;*/
+						opacity: 1;
+						transition: 1s;
+					}
+					ul
+					{
+						/*display:none; */
+						opacity: 0;
+						position:absolute;
+						left: 183px; 
+						top:0;
+					}
+					a
+					{
+						padding: 3px;
+						font-family: 'latolight';
+						color: #fff;
+						&:hover
+						{
+							color: #d5c80d;
+							text-decoration: none;
+						}
+					}
+				}
+			}
+			.navbar-form
+			{
+				padding: 0;
+				width: 180px;
+				height: 31px;
+				margin: 19.5px 0;
+				.form-control
+				{
+					height: 31px;
+					border: transparent;
+					box-shadow: unset;
+					border-radius: 0;
+					background: #e8e4f1;
+					&:focus
+					{
+						@include box-shadow(inset 0, 0, 0, rgba(0, 0, 0, 0));
+					}
+				}
+				.input-group-btn
+				{
+					.btn
+					{
+						padding: 6px 22px;
+						height: 31px;
+						border: transparent;
+						box-shadow: unset;
+						border-radius: 0;
+						background: #e8e4f1;
+					}
+				}
+			}
+		}
+	}
+}
+.first-block
+{
+	padding-top: 70px;
+	padding-right: 0 !important;
+	padding-left: 0 !important;
+	max-height: 880px;
+	.carousel
+	{
+		max-height: 790px;
+		.title
+		{
+			position: absolute;
+			z-index: 16;
+			top: 297px;
+			color: #fff;
+			margin: auto 6%;
+			h1
+			{
+				text-transform: uppercase;
+				font-family: 'latobold';
+				font-size: 64px;
+				span
+				{
+					color: #fff200;
+				}
+			}
+			p
+			{
+				font-size: 16px;
+				font-family: 'latoregular';
+				margin-top: 40px
+			}
+		}
+		.carousel-inner
+		{
+			max-height: 790px;
+			.item
+			{
+				img
+				{
+					width: 100%;
+				}
+			}
+		}
+		.left
+		{
+			background-image: none;
+		}
+		.right
+		{
+			background-image: none;
+		}
+		.carousel-indicators
+		{
+			.active 
+			{
+			    width: 7px;
+			    height: 7px;
+			    margin: 0;
+			    background-color: #fff;
+			}
+			li 
+			{
+			    display: inline-block;
+			    width: 7px;
+			    height: 7px;
+			    margin: 0;
+			    border: none;
+			    text-indent: -999px;
+			    cursor: pointer;
+			    background-color: #b7b7b7;
+			    border-radius: 10px;
+			}
+		}
+		.carousel-control 
+		{
+			span
+			{
+				background: rgba(245, 245, 245, 0.4);
+				width: 62px;
+				height: 60px;
+			}
+			.glyphicon-chevron-left
+			{
+				left: 7%;
+				&:before
+				{
+    				content: "";
+				}
+				img
+				{
+					position: absolute;
+					top: 40%;
+					left: 45%;
+				}
+			}
+			.glyphicon-chevron-right
+			{
+				right: 7%;
+				&:before
+				{
+    				content: "";
+				}
+				img
+				{
+					position: absolute;
+					top: 40%;
+					right: 45%;
+				}
+			}
+		}
+	}
+}
+.second-block
+{
+	.col-md-12
+	{
+		margin-top: 79px;
+		.stroke
+		{
+			width: 196px;
+			height: 266px;
+			border: 2px solid #ebebeb;
+			position: relative;
+			display: inline-block;
+			margin-right: 35px;
+
+			&:nth-child(5)
+			{
+				margin-right: 0;
+			}
+			&:hover .more
+			{
+				/*display: block;*/
+				opacity: 1;
+				transition: 0.7s;
+
+			}
+			.icon
+			{
+				height: 120px;
+				img
+				{
+					margin-top: 36px;
+				}
+			}
+			.desk
+			{
+				h4
+				{
+					font-family: 'latoheavy';
+					text-transform: uppercase;
+					font-size: 14px;
+					margin-top: 23px;
+					margin-bottom: 23px;
+				}
+				p
+				{
+					font-family: "latolight";
+					color: #373737;
+					font-size: 14px;
+				}
+			}
+			.more
+			{
+				position: absolute;
+				top: 119px;
+				height: 145px;
+				background: #503392;
+				width: 100%;
+				opacity: 0;
+				/*display: none;				*/
+				h4
+				{
+					text-transform: uppercase;
+					font-size: 14px;
+					font-family: 'latosemibold';
+					color: #fff;
+					margin: 32px 0;
+				}
+				.icons
+				{
+					a
+					{
+						margin-right: 10px;
+					}
+				}
+			}
+		}
+	}
+}
+.third-block
+{
+	.desk
+	{
+		margin-top: 48px;
+		margin-bottom: 67px;
+		p
+		{
+			color: #373737;
+		}
+	}
+	.pg-bar
+	{
+		height: 85px;
+    	display: block;
+		.pg-container
+		{
+		  	width: 100%;
+		    background-color: #fff;
+		    position: absolute;
+		    border: 1px solid #ddd;
+		    max-width: 545px;
+		    margin-top: 38px;
+    		display: block;
+		}
+		.rectangle 
+		{
+			width: 10%;
+		    background-color: #009dda;
+		    text-align: center;
+		    line-height: 30px;
+		    color: white;
+		    margin: 2px;
+		    border: 1.5px solid #009dda;
+		}
+		.procent
+		{
+			color: #444444;
+		    float: right;
+		    display: block;
+		    margin-right: 10px;
+		    font-family: 'latoregular';
+		    font-size: 13px;
+		}
+		p
+		{
+			display: inline-block;
+		    float: left;
+		    font-family: 'latobold';
+		    color: #444444;
+		    font-size: 13px;
+		    text-transform: uppercase;
+		}
+	}
+	.col-md-4
+	{
+		img
+		{
+			margin-top: 190px;
+			width: 100%;
+		}
+	}
+}
+.last-block
+{
+	padding-right: 0 !important;
+	padding-left: 0 !important;
+	.map
+	{
+		position: relative;
+		margin-top: 76px;
+		.bg-map
+		{
+			position: absolute;
+			width: 100%;
+			height: 99.3%;
+			top: 0;
+			right: 0;
+    		background: rgba(81, 80, 76, 0.6);
+    		.col-md-10
+    		{
+    			.adress
+    			{
+    				width: 100%;
+					height: 436px;
+					background:  rgba(52, 51, 50, 0.7);
+					margin-top: 98px;
+					.form-inline
+					{
+						margin-left: 67px;
+						margin-top: 83px;
+						max-width: 485px;
+						input
+						{
+							&:nth-child(1)
+							{
+								margin-right: 13px;
+							}
+						}
+						.exampleInput
+						{
+							max-width: 234px;
+							min-width: 48%;
+							height: 46px;
+						}
+						textarea
+						{
+							height: 140px;
+							max-width: 485px;
+							margin-top: 15px;
+							min-width: 100%;
+						}
+						.checkbox
+						{
+							margin-top: 30px;
+							span
+							{
+								font-family: 'latoregular';
+								color: #b7b7b7;
+								font-size: 16px;
+							}
+						}
+						button
+						{
+							float: right;
+							border-radius: 0;
+							border: none;
+							background: #ffff00;
+							font-family: 'latoregular';
+							width: 120px;
+							height: 60px;
+							font-size: 16px;
+							margin-top: 14px;
+						}
+					}
+					.form-control
+					{
+						color: #b7b7b7;
+						border: 2px solid #b7b7b7;
+						border-radius: 0;
+						font-family: 'latoregular';
+						background: border-box;
+					}
+					.col-md-3
+					{
+						p
+						{
+							font-family: 'latoregular';
+							color: #b7b7b7;
+							margin: 20px 0;
+							font-size: 16px;
+							&:nth-child(1)
+							{
+								margin-top: 83px;
+							}
+						}
+					}
+    			}
+    		}
+    		footer
+			{
+				position: absolute;
+				bottom: 0;
+				height: 61px;
+				background: #1a1a1a;
+				width: 100%;
+				>div
+				{
+					display: inline-block;
+					margin-top: 22px;
+				}
+				.copyright 
+				{
+					font-family: 'latoregular';
+					font-size: 16px;
+					color: #7a7a7a;
+				}
+				.social-icons
+				{
+					float: right;
+					a
+					{
+						margin: 0 15px;
+					}
+				}
+			}
+		}
+	}
+}
+@import "responsive";

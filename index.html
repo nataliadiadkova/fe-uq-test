@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>fe-uq-test</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/screen.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <!-- NAVBAR -->
+<nav class="navbar navbar-fixed-top" id="menu">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#home" class="someclass">Home</a></li>
+        <li ><a href="#products">Products</a>
+            <ul class="menu">
+              <li><a href="#">Name Surname</a></li>
+              <li><a href="#">Name Surname</a></li>
+              <li><a href="#">Name Surname</a>
+                <ul class="menu">
+                  <li><a href="#">Name Surname</a></li>
+                  <li><a href="#">Name Surname</a></li>
+                  <li><a href="#">Name Surname</a></li>
+                  <li><a href="#">Name Surname</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Name Surname</a></li>
+            </ul>
+        </li>
+        <li><a href="#about"  class="someclass">About</a></li>
+        <li><a href="#contact"  class="someclass">Contact</a></li>
+        <li>
+          <form class="navbar-form hidden-sm">
+            <div class="input-group">
+              <input type="text" class="form-control">
+              <div class="input-group-btn">
+                <button class="btn btn-default" type="submit">
+                  <img src="img/search-icon.png" alt="search-icon">
+                </button>
+              </div>
+            </div>
+          </form>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- CAROUSEL -->
+
+<div class="container-fluid first-block text-center" id="home">
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-10  col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 col-12">
+          <div class="title"><h1>Creative <span> Design Agency</span></h1>
+            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non
+            <br> mi porta gravida at eget metus. Curabitur blandit tempus porttitor. 
+            </p>
+            </div>
+        </div>
+      </div>
+    </div>
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="img/carousel-img.png" alt="carousel-img">
+        </div>
+        <div class="item">
+          <img src="img/carousel-img.png" alt="carousel-img">
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true">
+          <img src="img/glyphicon-left.png" alt="">
+        </span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true">
+          <img src="img/glyphicon-right.png" alt="">
+        </span>
+        <span class="sr-only">Next</span>
+      </a>
+  </div>
+</div> 
+
+<!-- SECOND-BLOCK -->
+
+<div class="container-fluid second-block text-center hidden-xs">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 col-sm-12 main-title">
+        <h1>Why <span>Choose Us</span></h1>
+        <p>Quisque fermentum, nisl mattis volutpat rhoncus, tellus est congue nibh, ut euismod quam nisi quis felis. <br>
+        Nullam at scelerisque tellus mattis volutpat rhoncus, </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="stroke">
+          <div class="icon">
+            <img src="img/heart.png" alt="heart">
+          </div>
+          <div class="desk">
+            <h4>your title</h4>
+            <p>Duis bibendum diam 
+            <br>non erat facilaisis en ter
+            <br>tincidunt. Duis  </p>
+          </div>
+          <div class="more">
+            <h4>see more</h4>
+            <div class="icons">
+            <a href="#">
+              <img src="img/more.png" alt="more">
+            </a>
+            <a href="#">
+              <img src="img/loupe.png" alt="loupe">
+            </a>
+            </div>
+          </div>
+        </div> 
+        <div class="stroke">
+          <div class="icon">
+            <img src="img/sms.png" alt="heart">
+          </div>
+          <div class="desk">
+            <h4>your title</h4>
+            <p>Duis bibendum diam 
+            <br>non erat facilaisis en ter
+            <br>tincidunt. Duis  </p>
+          </div>
+          <div class="more">
+            <h4>see more</h4>
+            <div class="icons">
+            <a href="#">
+              <img src="img/more.png" alt="more">
+            </a>
+            <a href="#">
+              <img src="img/loupe.png" alt="loupe">
+            </a>
+            </div>
+          </div>
+        </div> 
+        <div class="stroke">
+          <div class="icon">
+            <img src="img/laptop.png" alt="heart">
+          </div>
+          <div class="desk">
+            <h4>your title</h4>
+            <p>Duis bibendum diam 
+            <br>non erat facilaisis en ter
+            <br>tincidunt. Duis  </p>
+          </div>
+          <div class="more">
+            <h4>see more</h4>
+            <div class="icons">
+            <a href="#">
+              <img src="img/more.png" alt="more">
+            </a>
+            <a href="#">
+              <img src="img/loupe.png" alt="loupe">
+            </a>
+            </div>
+          </div>
+        </div>
+        <div class="stroke">
+          <div class="icon">
+            <img src="img/star.png" alt="heart">
+          </div>
+          <div class="desk">
+            <h4>your title</h4>
+            <p>Duis bibendum diam 
+            <br>non erat facilaisis en ter
+            <br>tincidunt. Duis  </p>
+          </div>
+          <div class="more">
+            <h4>see more</h4>
+            <div class="icons">
+            <a href="#">
+              <img src="img/more.png" alt="more">
+            </a>
+            <a href="#">
+              <img src="img/loupe.png" alt="loupe">
+            </a>
+            </div>
+          </div>
+        </div>
+        <div class="stroke">
+          <div class="icon">
+            <img src="img/flag.png" alt="heart">
+          </div>
+          <div class="desk">
+            <h4>your title</h4>
+            <p>Duis bibendum diam 
+            <br>non erat facilaisis en ter
+            <br>tincidunt. Duis  </p>
+          </div>
+          <div class="more">
+            <h4>see more</h4>
+            <div class="icons">
+            <a href="#">
+              <img src="img/more.png" alt="more">
+            </a>
+            <a href="#">
+              <img src="img/loupe.png" alt="loupe">
+            </a>
+            </div>
+          </div>
+        </div>      
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- THIRD-BLOCK -->
+
+<div class="container-fluid third-block" id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-6 col-xs-12 text-left main-title">
+        <h1>about <span>us</span></h1>
+        <p>Quisque fermentum, nisl mattis volutpat rhoncus, tellus est congue nibh, ut euism<br>
+        Nullam at scelerisque tellus mattis volutpat rhoncus, </p>
+        <div class="desk">
+          <p>Nullam at scelerisque tellus. Nulla feugiat iaculis ante, non tincidunt ligula scelerisque a. Vestibulum accumsan tincidunt odio vel finibus. Phasellus vestibulum lobortis ligula ut volutpat. Maecenas vitae nibh vel purus mollis semper. Nullam tempus feugiat mi id semper. Pellentesque ac posuere augue, vitae mollis enim. Etiam et ullamcorper dolor, a hendrerit quam. </p>
+        </div>
+        <div class="pg-bar untouched" data-value='79'>
+          <p>PHOTOSHOP</p>
+          <div class="procent">10%</div>
+          <div class="pg-container">
+            <div class="rectangle"></div>
+          </div>
+          <br>
+        </div>
+        <div class="pg-bar untouched" data-value='90'>
+          <p>HTML/CSS</p>
+          <div class="procent">10%</div>
+          <div class="pg-container">
+            <div class="rectangle"></div>
+          </div>
+          <br>
+        </div>
+        <div class="pg-bar untouched" data-value='69'>
+          <p>JAVASCRIPT</p>
+          <div class="procent">10%</div>
+          <div class="pg-container">
+            <div class="rectangle"></div>
+          </div>
+          <br>
+        </div>
+        <div class="pg-bar untouched" data-value='92'>
+          <p>WORDPRESS</p>
+          <div class="procent">10%</div>
+          <div class="pg-container">
+            <div class="rectangle"></div>
+          </div>
+          <br>
+        </div>
+      </div>
+      <div class="hidden-xs col-md-4 col-sm-5 col-md-offset-1 col-sm-offset-1 ">
+        <img src="img/ipad.png" alt="ipad">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- LAST-BLOCK -->
+
+<div class="container-fluid last-block" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12 col-12 text-center main-title">
+        <h1>get in <span>touch</span></h1>
+        <p>Quisque fermentum, nisl mattis volutpat rhoncus, tellus est congue nibh, ut euismod quam nisi quis felis. <br>
+        Nullam at scelerisque tellus mattis volutpat rhoncus, </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="map">  
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10294.19133407368!2d24.028285888745135!3d49.83216310181096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1507457529594" width="100%" height="695" frameborder="0" style="border:0" allowfullscreen> </iframe>
+    <div class="bg-map">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+            <div class="adress">
+              <div class="row">
+                <div class="col-md-8 col-sm-8 col-xs-12  col-12 text-left">
+                  <form class="form-inline">
+                      <input type="text" class="form-control exampleInput" id="exampleInputName2" placeholder="Full Name" required>
+                      <input type="email" class="form-control exampleInput" id="exampleInputEmail2" placeholder="E-mail Adress" required>
+                      <textarea class="form-control" rows="5" id="comment" placeholder="Message" required></textarea>
+                      <div class="checkbox">
+                        <label class="checkbox-inline"><input type="checkbox"  name="checkbox" value=""><span>I like your company</span></label>
+                      </div>
+                    <button type="submit" class="btn btn-default">Send</button>
+                  </form>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-12 hidden-xs text-left">
+                  <p>69/A, Some Street Name
+                  <br> Your City, code 01234  
+                  <br>Country Name</p>
+
+                  <p>+880 123 456 78 98
+                  <br>+860 987 648 74 95</p>
+
+                  <p>company@mail.com
+                  <br>sales@mail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="copyright text-left">
+          <p>Copyright © Company. All Rights Reserved  2016</p>
+        </div>
+        <div class="social-icons text-right">
+          <a href="#"><img src="img/facebook.png" alt="icon"></a>
+          <a href="#"><img src="img/google.png" alt="icon"></a>
+          <a href="#"><img src="img/twitter.png" alt="icon"></a>
+          <a href="#"><img src="img/dribbble.png" alt="icon"></a>
+        </div>
+      </footer>
+    </div>
+  </div>
+</div>        
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

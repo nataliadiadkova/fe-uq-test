@@ -1,0 +1,380 @@
+@mixin respond-to($media)
+{
+	  @if $media == big-tablet
+	  {
+	  	@media only screen and (max-width: 1400px)
+	  	{
+      		@content;
+	  	}
+	  }
+	  @if $media == tablet
+	  {
+	  	 @media only screen and (max-width: 1024px)
+	  	 {
+      		@content;
+	  	 }
+	  } 
+  	  @if $media == small-tablet
+  	  {
+  	  	@media only screen and (max-width: 800px)
+  	  	{
+      		@content;
+  	  	}
+  	  }
+  	  @if $media == mobile
+  	  {
+  	  	@media only screen and (max-width: 639px)
+  	  	{
+      		@content;
+  	  	}
+  	  }
+      @if $media == small-mobile
+      {
+        @media  only screen and (max-width: 430px)
+        {
+          @content;
+        }
+      }    
+}
+@include respond-to(tablet)
+{
+  .first-block
+  {
+    .carousel
+    {
+      .title
+      {
+          top: 197px;
+          h1
+          {
+            font-size: 50px;
+          }
+          p
+          {
+            margin-top: 15px;
+          }
+      }
+    }
+  } 
+  .last-block
+  {
+    .adress
+    {
+      .exampleInput
+      {
+        width: 48%;
+      }
+      textarea
+      {
+        width: 100%;
+      }
+    }
+  } 
+}
+@include respond-to(small-tablet)
+{
+  .navbar
+  {
+    .navbar-nav 
+    {
+      li
+      {
+        .navbar-form 
+        {
+          display: none;
+        }
+      }
+    }
+    .navbar-collapse
+    {
+      background: #fff;
+      ul
+      {
+        float: right;
+          display: block;
+          li
+          {
+            a
+            {
+              font-size: 14px;
+              padding: 10px;
+            }
+          }
+      }
+    }
+  } 
+  .first-block
+  {
+    .carousel
+    {
+      .title
+      {
+          top: 140px;
+          h1
+          {
+            font-size: 40px;
+          }
+          p
+          {
+            font-size: 12px;
+          }
+      }
+    }
+  }
+  .second-block
+  {
+    .col-md-12 
+    {
+      margin-top: 15px;
+      .stroke
+      {
+         margin-top: 20px;
+      }
+    }
+  }
+  .third-block
+  {
+    .desk 
+    {
+      margin-top: 20px;
+      margin-bottom: 25px;
+    }
+    .pg-bar
+    {
+      height: 50px;
+      .pg-container
+      {
+        width: 90%;
+      }
+    } 
+  }
+  .last-block 
+  {
+    .map 
+    {
+      .bg-map
+      {
+        .col-md-10 
+        {
+          .adress
+          {
+            .form-inline 
+            {
+              margin-left: 30px;
+            }
+          }
+        }
+      }
+    }
+  }    
+}
+@include respond-to(mobile)
+{
+  .main-title 
+  {
+    margin-top: 50px;
+    h1
+    {
+      margin-bottom: 20px;
+    }
+    p
+    {
+      font-size: 12px;
+    }
+  }
+  .first-block
+  {
+    .carousel
+    {
+      .title
+      {
+          top: 130px;
+          h1
+          {
+            font-size: 30px;
+          }
+          p
+          {
+            font-size: 10px;
+          }
+      }
+      .carousel-control
+      {
+        span
+        {
+          width: 30px;
+          height: 37px;
+        }
+      }
+    }
+  }
+  .last-block 
+  {
+    .map 
+    {
+      margin-top: 50px;
+      .bg-map
+      {
+        .col-md-10 
+        {
+          .adress
+          {
+            .form-inline 
+            {
+              margin-left: 30px;
+              margin-top: 30px;
+              input
+              {
+                &:nth-child(1)
+                {
+                  margin-bottom: 15px;
+                }
+              }
+              .checkbox
+              {
+                display: inline-block;
+              }
+              button
+              {
+                width: 100px;
+                height: 45px;
+              }
+            }
+            .col-md-3
+            {
+              p
+              {
+                font-size: 14px;
+                &:nth-child(1)
+                {
+                  margin-top: 30px;
+                }
+              }
+            }
+          }
+        }
+        footer
+        {
+          .copyright
+          {
+            font-size: 12px;
+          }
+          .social-icons
+          {
+            a
+            {
+              margin: 0px 6px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include respond-to(small-mobile)
+{
+  .main-title 
+  {
+      margin-top: 30px;
+      p
+      {
+        font-size: 10px;
+      }
+  }
+  .first-block
+  {
+    .carousel
+    {
+      .title
+      {
+          top: 50px;
+          h1
+          {
+            font-size: 17px;
+          }
+          p
+          {
+            font-size: 5px;
+            margin-top: 0;
+          }
+      }
+      .carousel-control
+      {
+        span
+        {
+          width: 30px;
+          height: 37px;
+        }
+      }
+    }
+  }
+  .last-block 
+  {
+    .map 
+    {
+      .bg-map
+      {
+        .col-md-10 
+        {
+          .adress
+          {
+            .form-inline 
+            {
+              margin-left: 15px;
+              margin-top: 15px;
+              margin-right: 15px;
+              .exampleInput
+              {
+                min-width: 100%;
+              }
+              input
+              {
+                &:nth-child(1)
+                {
+                  margin-bottom: 15px;
+                }
+              }
+              .checkbox
+              {
+                display: inline-block;
+                margin-top: 15px;
+              }
+              button
+              {
+                width: 75px;
+                height: 35px;
+              }
+            }
+            .col-md-3
+            {
+              p
+              {
+                font-size: 12px;
+                display: inline-block;
+                margin: 5px;
+                &:nth-child(1)
+                {
+                  margin-top: 3px;
+                }
+              }
+            }
+          }
+        }
+        footer
+        {
+          .copyright
+          {
+            font-size: 10px;
+          }
+          .social-icons
+          {
+            a
+            {
+              margin: 0px 2px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
